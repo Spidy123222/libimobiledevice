@@ -253,9 +253,7 @@ AM_CONDITIONAL(HAVE_GCRYPT, test "x$use_gnutls" == "xyes")
 AC_ARG_ENABLE([wireless-pairing],
             [AS_HELP_STRING([--disable-wireless-pairing],
             [Do not build with wirless pairing support (default is yes)])])
-if test "$enable_wireless_pairing" == "no"; then
-  AC_DEFINE(HAVE_WIRELESS_PAIRING,1,[Define if building with wireless pairing support])
-fi
+AC_DEFINE(HAVE_WIRELESS_PAIRING,1,[Define if building with wireless pairing support])
 AM_CONDITIONAL(HAVE_WIRELESS_PAIRING, test "$enable_wireless_pairing" != "no")
 
 AC_ARG_ENABLE([debug],

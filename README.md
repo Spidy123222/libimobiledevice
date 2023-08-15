@@ -1,4 +1,4 @@
-# libimobiledevice
+# libimobiledevicei
 
 *A library to communicate with services on iOS devices using native protocols.*
 
